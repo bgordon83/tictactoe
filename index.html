@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Example</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+​
+
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </heaf>
+
+      <h1 class="center"> </h1
+    <p>Welcome to your game of TicTacToe<
+      <p>Please sign up or sign in to get started.<p>
+
+<h2 id="message"></h2>
+      <h2>Sign-In</h2>
+      <form id='sign-in'>
+        <input type="email" name="credentials[email]" placeholder='Enter email...'>
+        <input type="password" name="credentials[password]" placeholder='Enter password'>
+        <button> Sign-In </button>
+
+
+      </form>
+
+
+      <h3>Sign-out</h3>
+
+      <form id='sign-out'>
+        <button> Sign-Out</button>
+
+      </form>
+
+
+      <h4>Change Password</h4>
+      <form id='change-password'>
+        <input type="password" name="passwords[old]"
+        placeholder='Enter old password'>
+        <input type="password" name="passwords[new]"
+        placeholder='Enter new password'>
+        <button> Change Password </button>
+
+      </form>
+
+        <h5>Sign-Up</h5>
+        <form id='sign-up'>
+
+          <input type="email" name="credentials[email]" placeholder='Enter email...'>
+          <input type="password" name="credentials[password]" placeholder='Enter password'>
+          <input type ="password" name="credentials[password_confirmation]" placeholder='Enter password again'>
+          <button> Sign-Up</button>
+      </form>
+
+      <h6>Sign-out</h6>
+
+      <form id='sign-out'>
+        <button> Sign-Out</button>
+
+      </form>
+
+    <body class="container">
+      <header>
+        <h1 class="gameboard">Tic Tac Toe</h1>
+        <button class="reset btn btn-primary">Reset</button>
+      </header>
+      <div class="row gameboard animated">
+        <div class="col-4 cell"></div>
+        <div class="col-4 cell"></div>
+        <div class="col-4 cell"></div>
+        <div class="col-4 cell"></div>
+        <div class="col-4 cell"></div>
+        <div class="col-4 cell"></div>
+        <div class="col-4 cell"></div>
+        <div class="col-4 cell"></div>
+        <div class="col-4 cell"></div>
+      </div>
+    </body>
+</html>
