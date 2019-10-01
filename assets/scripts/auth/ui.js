@@ -4,26 +4,26 @@
 // and their token
 const store = require('../store')
 
-const successMessage = function (newText) {
+const successMessage = function(newText) {
   $('#message').text(newText)
   $('#message').removeClass('failure')
   $('#message').addClass('success')
 }
 
-const failureMessage = function (newText) {
+const failureMessage = function(newText) {
   $('#message').text(newText)
   $('#message').removeClass('success')
   $('#message').addClass('failure')
 }
-const onSignUpSuccess = function () {
+const onSignUpSuccess = function() {
   successMessage('Signed up successfully!')
 }
 
-const onSignUpFailure = function () {
+const onSignUpFailure = function() {
   failureMessage('Sign up failed')
 }
 
-const onSignInSuccess = function (responseData) {
+const onSignInSuccess = function(responseData) {
   successMessage('Signed in successfully!')
   console.log('responseData is', responseData)
   // save the `user` we got from the API inside of `store`
@@ -32,27 +32,26 @@ const onSignInSuccess = function (responseData) {
   console.log('store is', store)
 
   $('#sign-in').hide()
-
-
 }
 
-const onSignInFailure = function () {
+
+const onSignInFailure = function() {
   failureMessage('Sign in failed')
 }
 
-const onChangePasswordSuccess = function () {
+const onChangePasswordSuccess = function() {
   successMessage('Changed password successfully!')
 }
 
-const onChangePasswordFailure = function () {
+const onChangePasswordFailure = function() {
   failureMessage('Change password failed')
 }
 
-const onSignOutSuccess = function () {
+const onSignOutSuccess = function() {
   successMessage('Signed out successfully!')
 }
 
-const onSignOutFailure = function () {
+const onSignOutFailure = function() {
   failureMessage('Sign out failed')
 }
 

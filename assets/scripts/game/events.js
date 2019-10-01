@@ -5,11 +5,30 @@ const api = require('./api')
 const ui = require('./ui')
 
 const onClickCell = function () {
+  // display x or o
+  // - use jQuery to replace value of clicked square with .text
+
+  // switch turns
+
+  // determine game state:
+  //  - winner?
+  //  - tie?
+  //  - keep playing?
+
+  // hook up to game API
+  //  - PATCH to api with index and value
+
+
   console.log('clicked')
 }
 const onReset = function () {
   console.log('reset')
 }
+
+// onNewGame
+//  - call api.newGame
+//  - handle success and error
+
 const onSignUp = function (event) {
   event.preventDefault()
 
