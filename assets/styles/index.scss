@@ -1,50 +1,51 @@
 @import '~bootstrap/scss/bootstrap';
 
-$black: #000;
+// .gameboard {
+//   height: 70vmin;
+//   margin: auto;
+//   width: 70vmin;
+//
+//  .cell {
+//   align-items: center;
+//   border-right: 2px solid;
+//   border-top: 2px solid;
+//   cursor: pointer;
+//   display: flex;
+//   font-size: 15vmin;
+//   height: calc(100% / 3);
+//   justify-content: center;
+//
+//   ​&:nth-child(3n) {
+//     border-right: 0;
+//   }
+//
+//   &:nth-child(-n + 3) {
+//     border-top: 0;
+//   }
+//   }
+// }
 
-.border {
-  border: 3px solid $black;
-  margin: 20px;
-  padding: 20px;
-}
-
-.success {
-  color: #008000;
-}
-
-.failure {
-  color: #ff0000;
-}
-header {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-#gameboard {
-  width: 360px;
-  margin: 0 auto;
-}
-
-.row {
-  clear: both;
-  overflow: hidden;
-}
-
-.square {
-  float: left;
-  width: 119px;
-  height: 119px;
-  border: 1px solid black;
-  cursor: pointer;
-}
-
-.bottom{
-  border-bottom: 1px solid black;
-}
-
-.right {
-border-right: 1px solid black;
+.gameboard {
+  height: 70vmin;
+  margin: auto;
+  width: 70vmin;
+​
+  .cell {
+    align-items: center;
+    border-right: 2px solid;
+    border-top: 2px solid;
+    cursor: pointer;
+    display: flex;
+    font-size: 15vmin;
+    height: calc(100% / 3);
+    justify-content: center;
+​
+    &:nth-child(3n) {
+      border-right: 0;
+    }
+​
+    &:nth-child(-n + 3) {
+      border-top: 0;
+    }
+  }
 }
