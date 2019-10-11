@@ -21,9 +21,6 @@ const onCreateExampleFailure = function () {
   failureMessage('Creating example failed')
 }
 
-
-
-
 module.exports = {
   onCreateExampleSuccess,
   onCreateExampleFailure

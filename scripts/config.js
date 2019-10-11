@@ -12,7 +12,6 @@ if (window.location.hostname === 'localhost') {
   apiUrl = apiUrls.production
 }
 
-
 module.exports = {
   apiUrl
 }
